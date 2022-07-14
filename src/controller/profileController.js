@@ -28,7 +28,7 @@ const businessCard= async function(req,res){
             if (data[requiredFields[i]] === undefined) {
                 return res.status(400).send({ status: false, message: `${requiredFields[i]} field is required` });
             }
-            else if (data[requiredFields[i]].trim() === "null" || data[requiredFields[i]].trim() == '') {
+            else if (data[requiredFields[i]] === "null" || data[requiredFields[i]] == '') {
                 return res.status(400).send({ status: false, message: ` Please enter valid data` });
             }
         }

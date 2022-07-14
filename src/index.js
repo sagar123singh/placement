@@ -8,7 +8,7 @@ const route = require('./route/route.js');
 const app = express();
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.urlencoded({ extended: true }));
 app.use(multer().any());
 
 
